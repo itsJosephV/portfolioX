@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect, useRef } from "react";
 import Form from "../components/Form";
+import { Divider } from "@nextui-org/react";
 
 const Contact = () => {
   const textareaRef = useRef(null);
@@ -15,46 +16,37 @@ const Contact = () => {
   }, []);
 
   return (
-    <div
-      className="max-w-containerSmall md:flex mx-auto"
-      // style={{ border: "1px solid green" }}
-    >
-      <div
-        className="flex flex-col pt-12 pb-10 px-5 gap-6 justify-between mx-auto"
-        // style={{ border: "1px solid gray" }}
-      >
-        <div>
-          <h1 className="text-2xl font-bold text-white text-start">Contact</h1>
-        </div>
-        <div
-          className="flex flex-col gap-5 slide-enter-content"
-          // style={{ border: "1px solid gray" }}
-        >
-          <p className="text-base text-neutral-400 leading-7 md:max-w-[650px]  text-start">
-            Thank you for visiting my portfolio page.
-          </p>
-          <p className="text-base text-neutral-400 leading-7 md:max-w-[650px] text-start mb-10">
+    <>
+      <div className="max-w-containerxs mx-auto ">
+        <h1 className="text-2xl font-bold text-white mb-8">Contact</h1>
+      </div>
+      <article>
+        <div className="flex flex-col slide-enter-content max-w-containerxs mx-auto">
+          <p className="text-base text-neutral-400 leading-7 max-w-containerxs text-start">
             If you have any questions, inquiries, or would like to discuss a
-            potential project, please don't hesitate to get in touch with me.
-            I'm here to help bring your web development ideas to life.
+            potential project, don't hesitate to get in touch with me.
           </p>
-          <div className="flex flex-col gap-2 mb-10">
-            <h1 className="font-semibold text-neutral-400 text-start">
-              My info
-            </h1>
-            <p className="text-neutral-400 text-start">jvp.2703@gmail.com</p>
-            <p className="text-neutral-400 text-start">+34 645-058-243</p>
-            <p className="text-neutral-400 text-start">
-              Las Palmas de G.C, Spain
-            </p>
-          </div>
-          <h1 className="text-start text-neutral-400">
-            Or send me a quick message
+          <Divider className="my-8" />
+          <h1 className="font-semibold text-neutral-400 text-start mb-2">
+            My info
           </h1>
+          <p className="text-neutral-400 text-start text-[14px] mb-1">
+            jvp.2703@gmail.com
+          </p>
+          <p className="text-neutral-400 text-start text-[14px] mb-1">
+            +34 645-058-243
+          </p>
+          <p className="text-neutral-400 text-start text-[14px] mb-1">
+            Las Palmas de G.C, Spain
+          </p>
+          <Divider className="my-8" />
+          <p className="text-start text-neutral-400 mb-3">
+            Send me a message {">"}
+          </p>
           <Form textareaRef={textareaRef} />
         </div>
-      </div>
-    </div>
+      </article>
+    </>
   );
 };
 

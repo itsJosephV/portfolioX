@@ -16,10 +16,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="dark">
-      <body className={`${inter.className} w-full min-h-screen`}>
+      <body className={`${inter.className} w-screen min-h-screen`}>
         <Providers>
           <NavBar />
-          <main className="">{children}</main>
+          <main className="pt-[65px] pb-[25px] px-[20px]">{children}</main>
         </Providers>
       </body>
     </html>

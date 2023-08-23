@@ -14,7 +14,7 @@ module.exports = {
       container: "1440px",
       contentContainer: "1140px",
       containerSmall: "1024px",
-      containerxs: "768px"
+      containerxs: "650px"
     },
     extend: {
       backgroundImage: {

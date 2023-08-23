@@ -15,6 +15,7 @@ const Form = ({ textareaRef }) => {
         placeholder="Enter your name"
         name="name"
         variant="bordered"
+        isRequired
         startContent={
           <UserIcon className="text-1xl text-default-400 pointer-events-none flex-shrink-0" />
         }
@@ -23,6 +24,7 @@ const Form = ({ textareaRef }) => {
         type="email"
         name="email"
         variant="bordered"
+        isRequired
         placeholder="Enter your email"
         startContent={
           <MailIcon className="text-1xl text-default-400 pointer-events-none flex-shrink-0" />
