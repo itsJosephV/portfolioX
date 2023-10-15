@@ -1,4 +1,4 @@
-import { MailIcon, UserIcon } from "@/icons";
+import { MailIcon, UserIcon } from "@/icons/icons";
 import { Textarea, Input } from "@nextui-org/react";
 import React from "react";
 
