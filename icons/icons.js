@@ -168,3 +168,4 @@ export const SendIcon = ({ width = 24, height = 24 }) => (
     <path d="M2 12H9V14H2zM4 15H10V17H4zM7 18H11V20H7z"></path>
   </svg>
 );
+// service_0d0oj0i

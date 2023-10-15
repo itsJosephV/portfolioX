@@ -1,19 +1,47 @@
 import { MailIcon, UserIcon } from "@/icons/icons";
 import { Textarea, Input } from "@nextui-org/react";
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
+import { createToast } from "vercel-toast";
+import "vercel-toast/css";
 
 const Form = ({ textareaRef }) => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        process.env.NEXT_PUBLIC_SERVICE_ID,
+        process.env.NEXT_PUBLIC_TEMPLATE_ID,
+        form.current,
+        process.env.NEXT_PUBLIC_USER_ID
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          createToast('Message sent!', {
+            timeout: 3000,
+            type:"dark"
+          })
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+      
+  };
+
   return (
     <form
+      ref={form}
+      onSubmit={sendEmail}
       className="flex flex-col gap-3 w-full"
-      action="https://getform.io/f/8540cf1c-a91f-4376-a3f7-78f372725a81"
-      method="POST"
-      // style={{border:"1px solid", borderColor:"gray", opacity:""}}
     >
       <Input
         type="text"
         placeholder="Enter your name"
-        name="name"
+        name="user_name"
         variant="bordered"
         isRequired
         startContent={
@@ -22,7 +50,7 @@ const Form = ({ textareaRef }) => {
       />
       <Input
         type="email"
-        name="email"
+        name="user_email"
         variant="bordered"
         isRequired
         placeholder="Enter your email"
