@@ -34,10 +34,10 @@ const Projects = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4">
           {parts.map((items, i) => (
             <div key={i} className="flex flex-col gap-4">
-              {items.map(({ imageURL, description }, x) => (
+              {items.map(({ image, description }, x) => (
                 <ProjectCard
                   key={x}
-                  imageURL={imageURL}
+                  image={image}
                   description={description}
                   x={x}
                 />
