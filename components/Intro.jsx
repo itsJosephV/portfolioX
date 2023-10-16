@@ -80,7 +80,6 @@ const Intro = () => {
           </span>{" "}
           Spain.
         </small>
-        <small className="text-neutral-400">2023-Present.</small>
       </div>
     </article>
   );

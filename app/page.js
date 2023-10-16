@@ -6,7 +6,7 @@ import SocialsHome from "../components/SocialsHome";
 
 export default function Home() {
   return (
-    <div className="mx-auto max-w-containerSmall relative">
+    <div className="max-w-containerSmall mx-auto w-full relative">
       <SocialsHome />
       <Intro />
     </div>

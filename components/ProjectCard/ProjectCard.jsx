@@ -39,7 +39,7 @@ const ProjectCard = ({ image, description, title, technologies, createdAt, x }) 
             <TechPill key={i} tech={tech} />
           ))}
         </div>
-        <p className="w-full text-[12px] font-mono text-neutral-500">{createdAt}</p>
+        <time className="w-full text-[12px] font-mono text-neutral-500">{createdAt}</time>
       </CardFooter>
     </Card>
   );

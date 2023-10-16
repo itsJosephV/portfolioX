@@ -34,7 +34,7 @@ const Projects = () => {
         </p>
       </div>
       <section>
-        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4">
+        <div className="max-w-container mx-auto grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4">
           {parts.map((items, i) => (
             <div key={i} className="flex flex-col gap-4">
               {items.map(({ image, description, title, technologies, createdAt }, x) => (
