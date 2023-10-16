@@ -1,7 +1,7 @@
 import { InstagramIcon, LinkedInIcon, GitHubIcon } from "@/icons/icons";
 import React from "react";
 
-const LeftSide = () => {
+const SocialsHome = () => {
   return (
     <div className="hidden lg:inline-flex h-full absolute p-5 left-0">
       <div className="w-full flex flex-col items-center justify-center gap-4">
@@ -25,4 +25,4 @@ const LeftSide = () => {
   );
 };
 
-export default LeftSide;
+export default SocialsHome;

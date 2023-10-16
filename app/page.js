@@ -1,13 +1,13 @@
 
 import Intro from "../components/Intro";
-import LeftSide from "../components/LeftSide";
+import SocialsHome from "../components/SocialsHome";
 
 // flex flex-col gap-5 slide-enter-content
 
 export default function Home() {
   return (
     <div className="mx-auto max-w-containerSmall relative">
-      <LeftSide />
+      <SocialsHome />
       <Intro />
     </div>
   );
