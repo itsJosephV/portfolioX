@@ -5,24 +5,25 @@ import { Divider } from "@nextui-org/react";
 import { infoList } from "@/data/infoList";
 
 const Contact = () => {
-  const textareaRef = useRef(null);
+  const inputNameRef = useRef(null);
 
   useEffect(() => {
     const urlParams = new URLSearchParams(window.location.search);
-    if (urlParams.get("focusTextarea") === "true") {
-      textareaRef.current.focus();
+    if (urlParams.get("focusInputName") === "true") {
+      inputNameRef.current.focus();
+      //? DELETE THE "focusInputName" QUERY FROM URL
       const newUrl = window.location.href.split("?")[0];
       history.replaceState(null, document.title, newUrl);
     }
   }, []);
 
   return (
-    <article className="max-w-containerxs mx-auto">
-      <div className="mb-8">
+    <article className="max-w-containerSmall mx-auto">
+      <div className="max-w-containerxs mx-auto mb-8">
         <h1 className="text-2xl font-bold text-white">Contact</h1>
       </div>
-      <section className="flex flex-col slide-enter-content">
-        <p className="text-base text-neutral-400 leading-7 max-w-containerxs text-start">
+      <section className="flex flex-col slide-enter-content max-w-containerxs mx-auto ">
+        <p className="text-base text-neutral-400 leading-7 text-start">
           If you have any questions, inquiries, or would like to discuss a
           potential project, don't hesitate to get in touch with me.
         </p>
@@ -42,7 +43,7 @@ const Contact = () => {
         <h3 className="font-semibold text-neutral-400 text-start mb-2">
           Send me a quick message
         </h3>
-        <Form textareaRef={textareaRef} />
+        <Form inputNameRef={inputNameRef} />
       </section>
     </article>
   );

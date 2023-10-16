@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
       <body className={`${inter.className} w-screen min-h-screen`}>
         <Providers>
           <NavBar />
-          <main className="pt-[65px] pb-[25px] px-[20px] max-w-contentContainer mx-auto">{children}</main>
+          <main className="pt-[65px] pb-[25px] px-[20px] max-w-container mx-auto">{children}</main>
         </Providers>
       </body>
     </html>

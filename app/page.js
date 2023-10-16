@@ -6,7 +6,7 @@ import LeftSide from "../components/LeftSide";
 
 export default function Home() {
   return (
-    <div className="mx-auto flex max-w-containerSmall h-full relative">
+    <div className="mx-auto max-w-containerSmall relative">
       <LeftSide />
       <Intro />
     </div>

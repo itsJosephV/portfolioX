@@ -48,11 +48,6 @@
   .slide-enter-content > *:nth-child(20) { --enter-stage: 20; }
 }
 
-.no-animation {
-  animation: none;
-}
-
 .current-page {
-  --tw-text-opacity: 1;
-  color: rgb(245 245 245 / var(--tw-text-opacity));
+  color: rgb(255, 255, 255)
 }

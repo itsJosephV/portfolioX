@@ -1,15 +1,17 @@
 import { MailIcon, UserIcon } from "@/icons/icons";
-import { Textarea, Input } from "@nextui-org/react";
-import React, { useRef } from "react";
+import { Textarea, Input, Button } from "@nextui-org/react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { createToast } from "vercel-toast";
 import "vercel-toast/css";
 
-const Form = ({ textareaRef }) => {
+const Form = ({ inputNameRef }) => {
+  const [isLoading, setIsLoading] = useState(false);
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
+    setIsLoading(true);
     emailjs
       .sendForm(
         process.env.NEXT_PUBLIC_SERVICE_ID,
@@ -20,25 +22,26 @@ const Form = ({ textareaRef }) => {
       .then(
         (result) => {
           console.log(result.text);
-          createToast('Message sent!', {
+          setIsLoading(false);
+          createToast("Message sent!", {
             timeout: 3000,
-            type:"dark"
-          })
+            type: "dark",
+          });
         },
         (error) => {
           console.log(error.text);
         }
       );
-      
   };
 
   return (
     <form
-      ref={form}
       onSubmit={sendEmail}
+      ref={form}
       className="flex flex-col gap-3 w-full"
     >
       <Input
+        ref={inputNameRef}
         type="text"
         placeholder="Enter your name"
         name="user_name"
@@ -59,14 +62,19 @@ const Form = ({ textareaRef }) => {
         }
       />
       <Textarea
-        ref={textareaRef}
         labelPlacement="inside"
         placeholder="Enter your message"
         className="max-w-xs"
         variant="bordered"
         name="message"
       />
-      <Input type="submit" value="Send" />
+      <Button
+        type="submit"
+        isLoading={isLoading}
+        className="font-semibold bg-neutral-900 hover:bg-neutral-800 duration-200"
+      >
+        SEND
+      </Button>
     </form>
   );
 };

@@ -7,16 +7,16 @@ import Link from "next/link";
 
 const Intro = () => {
   return (
-    <article className="max-w-containerxs mx-auto">
-      <div>
+    <article>
+      <div className="max-w-containerxs mx-auto mb-8">
         <h1
-          className="text-4xl font-bold text-white mb-8"
+          className="text-4xl font-bold text-white"
           // style={{ border: "1px solid", borderColor: "red" }}
         >
           Joseph V.
         </h1>
       </div>
-      <section className="flex flex-col slide-enter-content">
+      <div className="flex flex-col slide-enter-content max-w-containerxs mx-auto">
         <p className="text-base text-neutral-400 font-normal opacity-80 leading-7 mb-5">
           Hey there!, I am Joseph Vento, a{" "}
           <span className="font-semibold text-neutral-300">
@@ -26,7 +26,7 @@ const Intro = () => {
         <p className="text-base text-neutral-400  font-normal opacity-80 leading-7 mb-5">
           My path is about getting better every day and becoming the best
           version of myself. I'm currently focused on improving my skills in
-          frontend development, which involves creating appealing and
+          Front-End development, which involves creating appealing and
           user-friendly digital interfaces.
         </p>
         <ul className="text-neutral-400 gap-2 mb-5 flex flex-wrap">
@@ -64,7 +64,7 @@ const Intro = () => {
         <Divider className="my-8" />
         <small className="w-60 mb-5">
           <Link
-            href={{ pathname: "contact", query: { focusTextarea: true } }}
+            href={{ pathname: "contact", query: { focusInputName: true } }}
             className="py-1 px-2 bg-neutral-800 rounded-md flex items-center justify-center gap-1 text-neutral-400 cursor-pointer hover:text-neutral-100 duration-200"
           >
             <span>
@@ -81,7 +81,7 @@ const Intro = () => {
           Spain.
         </small>
         <small className="text-neutral-400">2023-Present.</small>
-      </section>
+      </div>
     </article>
   );
 };
