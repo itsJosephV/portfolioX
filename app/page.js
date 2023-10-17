@@ -1,6 +1,6 @@
 
-import Intro from "../components/Intro";
-import SocialsHome from "../components/SocialsHome";
+import Intro from "../components/_home/Intro";
+import SocialsHome from "../components/_home/SocialsHome";
 
 // flex flex-col gap-5 slide-enter-content
 

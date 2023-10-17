@@ -1,6 +1,7 @@
-import ExpItem from "@/components/ExpItem";
-import { experienceData } from "@/data/experienceData";
+import ExpItem from "@/components/_experience/ExpItem";
+
 import React from "react";
+import experienceData from "../../data/experienceData.json"
 
 const Exp = () => {
   return (

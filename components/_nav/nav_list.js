@@ -1,4 +1,4 @@
-export const menuList = [
+export const navlist = [
   {
     label: "Projects",
     route: "/projects",

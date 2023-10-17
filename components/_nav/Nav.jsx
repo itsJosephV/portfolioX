@@ -1,5 +1,4 @@
 "use client";
-import { menuList } from "@/data/menuList";
 import {
   Navbar,
   NavbarBrand,
@@ -13,6 +12,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 import React, { useState } from "react";
+import { navlist } from "./nav_list";
 
 const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -50,7 +50,7 @@ const NavBar = () => {
         className="hidden lg:flex gap-4"
         justify="end"
       >
-        {menuList.map((item, index) => (
+        {navlist.map((item, index) => (
           <li key={`${item}-${index}`}>
             <Link
               // className="text-neutral-400 hover:text-neutral-100 duration-200"
@@ -80,7 +80,7 @@ const NavBar = () => {
         </NavbarItem>
       </NavbarContent>
       <NavbarMenu className="flex flex-col gap-4 pt-3 slide-enter-content">
-        {menuList.map((item, index) => (
+        {navlist.map((item, index) => (
           <NavbarMenuItem key={`${item}-${index}`}>
             <Link
               onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -97,3 +97,6 @@ const NavBar = () => {
 };
 
 export default NavBar;
+
+
+

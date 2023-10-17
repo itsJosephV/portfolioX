@@ -4,8 +4,8 @@ import { Inter } from "next/font/google";
 // import { NextUIProvider } from "@nextui-org/react"
 import React from "react";
 import Providers from "./providers";
-import NavBar from "../components/NavBar";
-import Footer from "@/components/Footer";
+import Nav from "../components/_nav/Nav";
+import Footer from "@/components/_footer/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
       <body>
         <Providers>
           <div className={`${inter.className} w-screen min-h-screen flex flex-col`}>
-            <NavBar />
+            <Nav />
             <main className="pt-[65px] pb-[80px] px-[20px]">
               {children}
             </main>

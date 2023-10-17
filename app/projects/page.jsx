@@ -1,8 +1,8 @@
 "use client";
 import React from "react";
 import { useBreakpoint } from "use-breakpoint";
-import { projectsData } from "@/data/projectsData";
-import ProjectCard from "@/components/ProjectCard/ProjectCard";
+import projectsData from "../../data/projectsData.json"
+import ProjectCard from "@/components/_projectcard/ProjectCard";
 
 const Projects = () => {
   const BREAKPOINTS = { md: 768, lg: 1024 };

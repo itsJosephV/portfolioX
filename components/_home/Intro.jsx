@@ -1,6 +1,6 @@
 "use client";
-import { linksList } from "@/data/linksList";
-import { skillList } from "@/data/skillList";
+import { linksList } from "@/components/_home/links_list";
+import { skillList } from "@/components/_home/skill_list";
 import { BananaIcon, EmailMeIcon } from "@/icons/icons";
 import { Divider } from "@nextui-org/react";
 import Link from "next/link";

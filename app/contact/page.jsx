@@ -1,11 +1,16 @@
 "use client";
 import React, { useEffect, useRef } from "react";
-import Form from "../../components/Form";
+import Form from "../../components/form/Form";
 import { Divider } from "@nextui-org/react";
-import { infoList } from "@/data/infoList";
 
 const Contact = () => {
   const inputNameRef = useRef(null);
+
+  const CONTACT_INFO = [
+    { email: "jvp_2703@gmail.com" },
+    { phone: "+34 645058243" },
+    { location: "Las Palmas de G.C, Spain" },
+  ];
 
   useEffect(() => {
     const urlParams = new URLSearchParams(window.location.search);
@@ -31,7 +36,7 @@ const Contact = () => {
         <h3 className="font-semibold text-neutral-400 text-start mb-2">
           My info
         </h3>
-        {infoList.map((infoItem, idx) => {
+        {CONTACT_INFO.map((infoItem, idx) => {
           const infoText = infoItem[Object.keys(infoItem)[0]];
           return (
             <p key={idx} className="text-neutral-400 text-[14px] mb-1">
