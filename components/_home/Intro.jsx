@@ -18,7 +18,7 @@ const Intro = () => {
       </div>
       <div className="flex flex-col slide-enter-content max-w-containerxs mx-auto">
         <p className="text-base text-neutral-400 font-normal opacity-80 leading-7 mb-5">
-          Hey there!, I am Joseph Vento, a{" "}
+          <em>Hey there!</em>, I am Joseph Vento, a{" "}
           <span className="font-semibold text-neutral-300">
             Front-End Web Developer.
           </span>
