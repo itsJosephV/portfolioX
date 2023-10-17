@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect, useRef } from "react";
-import Form from "../../components/form/Form";
+import Form from "../../components/_form/Form";
 import { Divider } from "@nextui-org/react";
 
 const Contact = () => {
