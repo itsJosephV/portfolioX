@@ -42,19 +42,22 @@ const Form = ({ inputNameRef }) => {
     >
       <Input
         ref={inputNameRef}
+        variant="underlined"
+        radius="sm"
         type="text"
         placeholder="Enter your name"
         name="user_name"
-        variant="bordered"
         isRequired
         startContent={
           <UserIcon className="text-1xl text-default-400 pointer-events-none flex-shrink-0" />
         }
       />
       <Input
+        variant="underlined"
         type="email"
+        radius="sm"
+
         name="user_email"
-        variant="bordered"
         isRequired
         placeholder="Enter your email"
         startContent={
@@ -62,11 +65,11 @@ const Form = ({ inputNameRef }) => {
         }
       />
       <Textarea
-        labelPlacement="inside"
+        radius="sm"
         placeholder="Enter your message"
         className="max-w-xs"
-        variant="bordered"
         name="message"
+        variant="underlined"
       />
       <Button
         type="submit"

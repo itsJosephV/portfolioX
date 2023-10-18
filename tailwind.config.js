@@ -17,7 +17,6 @@ module.exports = {
       containerxs: "650px"
     },
     extend: {
-      backgroundImage: {},
       screens: {
       'sm': '640px',
       'md': '768px',

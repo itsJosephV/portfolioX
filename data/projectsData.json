@@ -7,7 +7,8 @@
     "technologies": ["Javascript", "TailwindCSS", "NextJS"],
     "githubLink": "",
     "demoLink": "",
-    "createdAt": "07/23"
+    "createdAt": "07/23",
+    "inProgress": false
   },
   {
     "title": "project2",
@@ -17,7 +18,8 @@
     "technologies": ["Javascript", "TailwindCSS", "NextJS"],
     "githubLink": "",
     "demoLink": "",
-    "createdAt": "07/23"
+    "createdAt": "07/23",
+    "inProgress": false
   },
   {
     "title": "project3",
@@ -27,7 +29,8 @@
     "technologies": ["Javascript", "TailwindCSS", "NextJS"],
     "githubLink": "",
     "demoLink": "",
-    "createdAt": "07/23"
+    "createdAt": "07/23",
+    "inProgress": false
   },
   {
     "title": "project4",
@@ -37,7 +40,8 @@
     "technologies": ["Javascript", "TailwindCSS", "NextJS"],
     "githubLink": "",
     "demoLink": "",
-    "createdAt": "07/23"
+    "createdAt": "07/23",
+    "inProgress": false
   },
   {
     "title": "project5",
@@ -47,7 +51,8 @@
     "technologies": ["Javascript", "TailwindCSS", "NextJS"],
     "githubLink": "",
     "demoLink": "",
-    "createdAt": "07/23"
+    "createdAt": "07/23",
+    "inProgress": false
   },
   {
     "title": "project6",
@@ -57,7 +62,8 @@
     "technologies": ["Javascript", "TailwindCSS", "NextJS"],
     "githubLink": "",
     "demoLink": "",
-    "createdAt": "07/23"
+    "createdAt": "07/23",
+    "inProgress": false
   },
   {
     "title": "project8",
@@ -67,7 +73,8 @@
     "technologies": ["Javascript", "TailwindCSS", "NextJS"],
     "githubLink": "",
     "demoLink": "",
-    "createdAt": "07/23"
+    "createdAt": "07/23",
+    "inProgress": false
   },
   {
     "title": "project8",
@@ -77,6 +84,7 @@
     "technologies": ["Javascript", "TailwindCSS", "NextJS"],
     "githubLink": "",
     "demoLink": "",
-    "createdAt": "07/23"
+    "createdAt": "07/23",
+    "inProgress": false
   }
 ]
