@@ -73,7 +73,7 @@ const NavBar = () => {
             href="/assets/Joseph_Vento_CV.pdf"
             variant="flat"
             target="_blank"
-            className="py-1.5 px-4 m-2 text-sm rounded-lg border border-neutral-600 bg-neutral-900 hover:border-neutral-100 text-neutral-400 font-semibold hover:text-neutral-100 duration-200"
+            className="py-1.5 px-4 m-2 text-sm rounded-md border border-neutral-600 bg-neutral-900 hover:border-neutral-100 text-neutral-400 font-semibold hover:text-neutral-100 duration-200"
           >
             Resume
           </a>

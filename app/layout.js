@@ -3,8 +3,8 @@ import { Open_Sans } from "next/font/google";
 
 import React from "react";
 import Providers from "./providers";
-import Nav from "../components/_nav/Nav";
-import Footer from "@/components/_footer/Footer";
+import Nav from "../components/Navbar/Nav";
+import Footer from "@/components/Footer/Footer";
 
 const Os = Open_Sans({ subsets: ["latin"] });
 

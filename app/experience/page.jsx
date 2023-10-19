@@ -1,4 +1,4 @@
-import ExpItem from "@/components/_experience/ExpItem";
+import ExpItem from "@/components/Experience/ExpItem";
 
 import React from "react";
 import experienceData from "../../data/experienceData.json"

@@ -2,7 +2,7 @@
 import React from "react";
 import { useBreakpoint } from "use-breakpoint";
 import projectsData from "../../data/projectsData.json"
-import ProjectCard from "@/components/_projectcard/ProjectCard";
+import ProjectCard from "@/components/Projectcard/ProjectCard";
 
 const Projects = () => {
   const BREAKPOINTS = { md: 768, lg: 1024 };

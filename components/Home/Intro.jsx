@@ -1,11 +1,20 @@
 "use client";
-import { linksList } from "@/components/_home/links_list";
-import { skillList } from "@/components/_home/skill_list";
-import { BananaIcon, EmailMeIcon } from "@/icons/icons";
+import { linksList } from "@/components/Home/links_list";
+import { skillList } from "@/components/Home/skill_list";
+import {
+  BananaIcon,
+  EmailMeIcon,
+  GitHubIcon,
+  InstagramIcon,
+  LinkedInIcon,
+} from "@/icons/icons";
 import { Divider } from "@nextui-org/react";
 import Link from "next/link";
 
 const Intro = () => {
+  const socialsClass =
+    "text-xl text-neutral-400 inline-flex items-center hover:text-emerald-400 justify-center cursor-pointer hover:-translate-y-[2px] duration-200";
+
   return (
     <article>
       <div className="max-w-containerxs mx-auto mb-8">
@@ -16,7 +25,9 @@ const Intro = () => {
           Joseph V.
         </h1>
       </div>
-      <div className="flex flex-col slide-enter-content max-w-containerxs mx-auto">
+      <div className="flex flex-col  max-w-containerxs mx-auto">
+        {" "}
+        {/***slide-enter-content */}
         <p className="text-base text-neutral-400 font-normal opacity-80 leading-7 mb-5">
           <em>Hey there!</em>, I am Joseph Vento, a{" "}
           <span className="font-semibold text-neutral-300">
@@ -46,10 +57,8 @@ const Intro = () => {
           visual creations.
         </p>
         <Divider className="my-8" />
-        <section className="flex flex-col gap-2">
-          <p className="text-base text-neutral-400  font-normal">
-            Another links
-          </p>
+        <section className="flex flex-col gap-2 lg:mb-2 mb-5">
+          <p className="text-base text-neutral-400  font-normal">Other links</p>
           <ul className="flex flex-row gap-2">
             {linksList.map((link) => (
               <li key={link.title} className="inline-flex items-center gap-1">
@@ -60,6 +69,26 @@ const Intro = () => {
               </li>
             ))}
           </ul>
+        </section>
+        <section className="flex flex-col gap-2 lg:hidden">
+          <p className="text-base text-neutral-400  font-normal">Socials</p>
+          <div className="flex flex-row gap-3 justify-start">
+            <a href="">
+              <span className={socialsClass}>
+                <GitHubIcon height={23} width={23} />
+              </span>
+            </a>
+            <a href="">
+              <span className={socialsClass}>
+                <LinkedInIcon height={23} width={23} />
+              </span>
+            </a>
+            <a href="">
+              <span className={socialsClass}>
+                <InstagramIcon height={23} width={23} />
+              </span>
+            </a>
+          </div>
         </section>
         <Divider className="my-8" />
         <small className="w-60 mb-5">
