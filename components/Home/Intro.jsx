@@ -25,9 +25,7 @@ const Intro = () => {
           Joseph V.
         </h1>
       </div>
-      <div className="flex flex-col  max-w-containerxs mx-auto">
-        {" "}
-        {/***slide-enter-content */}
+      <div className="flex flex-col slide-enter-content max-w-containerxs mx-auto">
         <p className="text-base text-neutral-400 font-normal opacity-80 leading-7 mb-5">
           <em>Hey there!</em>, I am Joseph Vento, a{" "}
           <span className="font-semibold text-neutral-300">
@@ -41,7 +39,7 @@ const Intro = () => {
           user-friendly digital interfaces.
         </p>
         <ul className="text-neutral-400 gap-2 mb-5 flex flex-wrap">
-          Current skills:{" "}
+          Current stack:{" "}
           {skillList.map((skill) => (
             <li key={skill.title}>
               <span className="font-semibold text-neutral-300">
@@ -70,7 +68,7 @@ const Intro = () => {
             ))}
           </ul>
         </section>
-        <section className="flex flex-col gap-2 lg:hidden">
+        <section className="flex flex-col gap-3 lg:hidden">
           <p className="text-base text-neutral-400  font-normal">Socials</p>
           <div className="flex flex-row gap-3 justify-start">
             <a href="">

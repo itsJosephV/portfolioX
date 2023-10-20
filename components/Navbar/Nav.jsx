@@ -28,7 +28,12 @@ const NavBar = () => {
   const location = usePathname();
 
   return (
-    <Navbar isMenuOpen={isMenuOpen} onMenuOpenChange={setIsMenuOpen} isBordered>
+    <Navbar
+      isMenuOpen={isMenuOpen}
+      onMenuOpenChange={setIsMenuOpen}
+      isBordered
+      className={!isMenuOpen ? "bg-transparent" : "bg-[#101014]"}
+    >
       <NavbarContent>
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
@@ -79,7 +84,7 @@ const NavBar = () => {
           </a>
         </NavbarItem>
       </NavbarContent>
-      <NavbarMenu className="flex flex-col gap-4 pt-3 slide-enter-content">
+      <NavbarMenu className="flex flex-col gap-4 pt-3 slide-enter-content bg-[#101014]">
         {navlist.map((item, index) => (
           <NavbarMenuItem key={`${item}-${index}`}>
             <Link
@@ -97,6 +102,3 @@ const NavBar = () => {
 };
 
 export default NavBar;
-
-
-

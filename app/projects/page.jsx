@@ -7,8 +7,6 @@ import ProjectCard from "@/components/Projectcard/ProjectCard";
 const Projects = () => {
   const BREAKPOINTS = { md: 768, lg: 1024 };
 
-  // console.log(projectsData[0].technologies)
-  
   const { breakpoint } = useBreakpoint(BREAKPOINTS);
 
   const cols = breakpoint === "lg" ? 3 : breakpoint === "md" ? 2 : 1;

@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 
+body {
+  background-color: #101014;
+}
+
 @keyframes slide-enter {
   0% {
     transform: translateY(10px);

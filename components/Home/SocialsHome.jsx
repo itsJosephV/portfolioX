@@ -4,7 +4,7 @@ import React from "react";
 const SocialsHome = () => {
   return (
     <aside className="hidden lg:inline-flex h-full absolute p-5 left-0">
-      <div className="w-full flex flex-col items-center justify-center gap-2">
+      <div className="w-full flex flex-col items-center justify-center gap-3">
         <a href="">
           <span className="text-xl text-neutral-400 inline-flex items-center hover:text-emerald-400 justify-center cursor-pointer hover:-translate-y-[2px] duration-200">
             <GitHubIcon height={23} width={23} />

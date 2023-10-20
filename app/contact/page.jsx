@@ -5,12 +5,7 @@ import { Divider } from "@nextui-org/react";
 
 const Contact = () => {
   const inputNameRef = useRef(null);
-
-  const CONTACT_INFO = [
-    { phone: "+34 645058243" },
-    { location: "Las Palmas de G.C, Spain" },
-  ];
-
+  
   useEffect(() => {
     const urlParams = new URLSearchParams(window.location.search);
     if (urlParams.get("focusInputName") === "true") {
