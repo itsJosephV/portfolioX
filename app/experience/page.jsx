@@ -10,7 +10,7 @@ const Exp = () => {
         <h1 className="text-2xl font-bold text-white">Experience</h1>
       </div>
       <section className="max-w-containerxs mx-auto">
-        <ol className="relative border-l border-gray-700 slide-enter-content">
+        <ol className="relative border-l border-neutral-700 slide-enter-content">
           {experienceData.map((item, i) => (
             <ExpItem key={i} date={item.date} title={item.title} description={item.description} />
           ))

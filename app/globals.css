@@ -2,9 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --main-bg-color: #101014
+}
+
 
 body {
-  background-color: #101014;
+
+  background-color: var(--main-bg-color);
 }
 
 @keyframes slide-enter {

@@ -5,7 +5,7 @@ const Footer = () => {
   const year = new Date().getFullYear()
 
   return (
-    <footer className="w-full text-center p-2 mt-auto relative">
+    <footer className="w-full text-center p-2 mt-auto relative px-[20px]">
       <div className="max-w-containerxs mx-auto flex justify-between">
         <small className="text-neutral-600">JOSEPHV / {year}-Present.</small>
         <a href="">

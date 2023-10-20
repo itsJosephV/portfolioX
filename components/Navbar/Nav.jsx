@@ -32,7 +32,10 @@ const NavBar = () => {
       isMenuOpen={isMenuOpen}
       onMenuOpenChange={setIsMenuOpen}
       isBordered
-      className={!isMenuOpen ? "bg-transparent" : "bg-[#101014]"}
+      //? (shouldHideOnScroll) works weird in Safari, shows up again when bottom is reached
+      //? works perfectly on Firefox
+      className={!isMenuOpen ? "bg-transparent" : "bg-[--main-bg-color]"}
+
     >
       <NavbarContent>
         <NavbarMenuToggle
@@ -84,7 +87,7 @@ const NavBar = () => {
           </a>
         </NavbarItem>
       </NavbarContent>
-      <NavbarMenu className="flex flex-col gap-4 pt-3 slide-enter-content bg-[#101014]">
+      <NavbarMenu className="flex flex-col gap-4 pt-3 slide-enter-content bg-[--main-bg-color]">
         {navlist.map((item, index) => (
           <NavbarMenuItem key={`${item}-${index}`}>
             <Link

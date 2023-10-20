@@ -1,20 +1,12 @@
 "use client";
 import { linksList } from "@/components/Home/links_list";
 import { skillList } from "@/components/Home/skill_list";
-import {
-  BananaIcon,
-  EmailMeIcon,
-  GitHubIcon,
-  InstagramIcon,
-  LinkedInIcon,
-} from "@/icons/icons";
+import { BananaIcon, EmailMeIcon } from "@/icons/icons";
 import { Divider } from "@nextui-org/react";
 import Link from "next/link";
+import SocialsHomeSM from "./SocialsHomeSM";
 
 const Intro = () => {
-  const socialsClass =
-    "text-xl text-neutral-400 inline-flex items-center hover:text-emerald-400 justify-center cursor-pointer hover:-translate-y-[2px] duration-200";
-
   return (
     <article>
       <div className="max-w-containerxs mx-auto mb-8">
@@ -56,7 +48,7 @@ const Intro = () => {
         </p>
         <Divider className="my-8" />
         <section className="flex flex-col gap-2 lg:mb-2 mb-5">
-          <p className="text-base text-neutral-400  font-normal">Other links</p>
+          <p className="text-base text-neutral-400 font-normal">Other links</p>
           <ul className="flex flex-row gap-2">
             {linksList.map((link) => (
               <li key={link.title} className="inline-flex items-center gap-1">
@@ -69,24 +61,8 @@ const Intro = () => {
           </ul>
         </section>
         <section className="flex flex-col gap-3 lg:hidden">
-          <p className="text-base text-neutral-400  font-normal">Socials</p>
-          <div className="flex flex-row gap-3 justify-start">
-            <a href="">
-              <span className={socialsClass}>
-                <GitHubIcon height={23} width={23} />
-              </span>
-            </a>
-            <a href="">
-              <span className={socialsClass}>
-                <LinkedInIcon height={23} width={23} />
-              </span>
-            </a>
-            <a href="">
-              <span className={socialsClass}>
-                <InstagramIcon height={23} width={23} />
-              </span>
-            </a>
-          </div>
+          <p className="text-base text-neutral-400 font-normal">Socials</p>
+          <SocialsHomeSM />
         </section>
         <Divider className="my-8" />
         <small className="w-60 mb-5">
