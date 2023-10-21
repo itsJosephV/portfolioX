@@ -1,14 +1,6 @@
-export const getQuote = async () => {
-  const url = `https://api.api-ninjas.com/v1/quotes?category=${process.env.NEXT_PUBLIC_QUOTE_SUBJECT}&limit=1`;
+import quotes from "../../data/quotes"
 
-  const data = await fetch(url, {
-    cache: 'no-store',
-    method: "GET",
-    headers: {
-      "X-Api-Key": process.env.NEXT_PUBLIC_NINJA_AKEY,
-    },
-  });
-  const quoteData = await data.json();
-
-  return quoteData[0]
-};
+export  const getQuote = () => {
+  const index = Math.floor(Math.random() * quotes.length)
+  return quotes[index]
+}

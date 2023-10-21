@@ -87,9 +87,9 @@ const Intro = ({ quote }) => {
           Spain.
         </small>
         {isQuoteOpen && (
-          <section className=" mt-10 px-5 flex justify-center">
+          <section className=" mt-10 px-5 flex justify-center no-animation">
             <q className="text-[#353535] text-[14px]">
-              <em>{quote.quote}</em>
+              <em>{quote}</em>
             </q>
           </section>
         )}

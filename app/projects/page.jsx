@@ -5,6 +5,7 @@ import projectsData from "../../data/projectsData.json"
 import ProjectCard from "@/components/Projectcard/ProjectCard";
 
 const Projects = () => {
+
   const BREAKPOINTS = { md: 768, lg: 1024 };
 
   const { breakpoint } = useBreakpoint(BREAKPOINTS);
