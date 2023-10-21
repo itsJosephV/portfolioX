@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
         <Providers>
           <div className={`${Os.className} w-screen min-h-screen flex flex-col`}>
             <Nav />
-            <main className="pt-[65px] pb-[80px] px-[20px]">
+            <main className="py-[65px] px-[20px]">
               {children}
             </main>
             <Footer />

@@ -1,14 +1,13 @@
-
 import Intro from "../components/Home/Intro";
-import SocialsHomeLG  from "../components/Home/SocialsHomeLG";
+import { getQuote } from "./api/getQuote";
 
-// flex flex-col gap-5 slide-enter-content
+export default async function Home() {
 
-export default function Home() {
+  const quote = await getQuote()
+
   return (
-    <div className="max-w-containerSmall mx-auto w-full relative">
-      <SocialsHomeLG />
-      <Intro />
+    <div className="max-w-containerSmall mx-auto w-full">
+      <Intro quote={quote} />
     </div>
   );
 }

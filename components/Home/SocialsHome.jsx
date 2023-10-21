@@ -1,7 +1,7 @@
 import React from "react";
 import { InstagramIcon, LinkedInIcon, GitHubIcon } from "@/icons/icons";
 
-const SocialsHomeSM = () => {
+const SocialsHome = () => {
   const socialsClass =
     "text-xl text-neutral-400 inline-flex items-center justify-center cursor-pointer duration-200";
 
@@ -26,4 +26,4 @@ const SocialsHomeSM = () => {
   );
 };
 
-export default SocialsHomeSM;
+export default SocialsHome;
