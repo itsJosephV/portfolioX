@@ -17,6 +17,14 @@ module.exports = {
       containerxs: "650px",
     },
     extend: {
+      colors: {
+        "main-bg-color": "var(--main-bg-color)",
+        "secondary-bg-color": "var(--secondary-bg-color)",
+        "primary-color": "var(--primary-color)",
+        "secondary-color": "var(--secondary-color)",
+        "base-border-color": "var(--base-border-color)",
+        "muted-color" : "var(--muted-color)"
+      },
       screens: {
         sm: "640px",
         md: "768px",

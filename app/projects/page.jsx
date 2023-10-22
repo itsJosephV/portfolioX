@@ -26,8 +26,8 @@ const Projects = () => {
   return (
     <article>
       <div className="max-w-containerxs mx-auto mb-8">
-        <h1 className="text-2xl font-bold text-white mb-3">Projects</h1>
-        <p className="text-neutral-400">
+        <h1 className="text-2xl font-bold mb-3">Projects</h1>
+        <p className="">
           Lorem ipsum dolor sit amet consectetur adipisicing elit.
           Necessitatibus, ut.
         </p>

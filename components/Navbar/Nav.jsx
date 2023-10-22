@@ -10,7 +10,6 @@ import {
 } from "@nextui-org/react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-
 import React, { useState } from "react";
 import { navlist } from "./nav_list";
 
@@ -24,6 +23,8 @@ const NavBar = () => {
       return;
     }
   };
+
+  // const { quoteClose } = useGenerationStore()
 
   const location = usePathname();
 
@@ -46,7 +47,7 @@ const NavBar = () => {
           <Link
             onClick={handleBrandNavToggle}
             href="/"
-            className="font-bold text-inherit"
+            className="font-bold text-primary-color"
           >
             JV.
           </Link>
@@ -62,7 +63,7 @@ const NavBar = () => {
           <li key={`${item}-${index}`}>
             <Link
               // className="text-neutral-400 hover:text-neutral-100 duration-200"
-              className={`text-neutral-400 hover:text-neutral-100 duration-200 ${
+              className={`duration-200 text-secondary-color hover:text-primary-color ${
                 location === item.route && "current-page"
               }`}
               href={item.route}
@@ -81,7 +82,7 @@ const NavBar = () => {
             href="/assets/Joseph_Vento_CV.pdf"
             variant="flat"
             target="_blank"
-            className="py-1.5 px-4 m-2 text-sm rounded-md border border-neutral-600 bg-neutral-900 hover:border-neutral-100 text-neutral-400 font-semibold hover:text-neutral-100 duration-200"
+            className="py-1.5 px-4 m-2 text-sm text-secondary-color hover:text-primary-color hover:border-primary-color rounded-md font-semibold bg-secondary-bg-color border border-base-border-color duration-200"
           >
             Resume
           </a>
@@ -92,7 +93,7 @@ const NavBar = () => {
           <NavbarMenuItem key={`${item}-${index}`}>
             <Link
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-2xl text-neutral-400 hover:text-neutral-100 duration-200 font-semibold"
+              className="text-2xl text-secondary-color hover:text-primary-color duration-200 font-semibold"
               href={item.route}
             >
               {item.label}

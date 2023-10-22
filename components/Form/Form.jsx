@@ -49,7 +49,7 @@ const Form = ({ inputNameRef }) => {
         name="user_name"
         isRequired
         startContent={
-          <UserIcon className="text-1xl text-default-400 pointer-events-none flex-shrink-0" />
+          <UserIcon className="text-1xl pointer-events-none flex-shrink-0" />
         }
       />
       <Input
@@ -61,7 +61,7 @@ const Form = ({ inputNameRef }) => {
         isRequired
         placeholder="Enter your email"
         startContent={
-          <MailIcon className="text-1xl text-default-400 pointer-events-none flex-shrink-0" />
+          <MailIcon className="text-1xl pointer-events-none flex-shrink-0" />
         }
       />
       <Textarea
@@ -74,7 +74,7 @@ const Form = ({ inputNameRef }) => {
       <Button
         type="submit"
         isLoading={isLoading}
-        className="font-semibold bg-neutral-900 hover:bg-neutral-800 duration-200"
+        className="font-semibold duration-200"
       >
         SEND
       </Button>

@@ -170,10 +170,10 @@ export const SendIcon = ({ width = 24, height = 24 }) => (
 );
 // service_0d0oj0i
 
-export const QuoteIcon = ({ width = 24, height = 24, fill = "white" }) => (
+export const QuoteIcon = ({ width = 24, height = 24 }) => (
   <svg
     stroke="currentColor"
-    fill={fill}
+    fill="currentColor"
     strokeWidth="0"
     viewBox="0 0 24 24"
     height={height}

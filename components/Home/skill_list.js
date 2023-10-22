@@ -1,8 +1,8 @@
 export const skillList = [
   { title: "JavaScript", icon: "icon" },
-  { title: "ReactJS", icon: "icon" },
-  { title: "NextJS", icon: "icon" },
+  { title: "React.js", icon: "icon" },
+  { title: "Next.js", icon: "icon" },
   { title: "TailwindCSS", icon: "icon" },
-  { title: "NodeJS", icon: "icon" },
+  { title: "Node.js", icon: "icon" },
   { title: "MongoDB", icon: "icon" },
 ];

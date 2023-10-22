@@ -15,8 +15,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className="dark">
-      <body>
+    <html lang="en" className="dark"> {/* dark */}
+      <body className="bg-main-bg-color">
         <Providers>
           <div className={`${Os.className} w-screen min-h-screen flex flex-col`}>
             <Nav />

@@ -3,14 +3,14 @@
 @tailwind utilities;
 
 :root {
-  --main-bg-color: #101014
+  --main-bg-color: #121212;
+  --secondary-bg-color: #181818;
+  --primary-color: #fff;
+  --secondary-color: #b3b3b3;
+  --base-border-color: #404040;
+  --muted-color: #404040;
 }
 
-
-body {
-
-  background-color: var(--main-bg-color);
-}
 
 @keyframes slide-enter {
   0% {
