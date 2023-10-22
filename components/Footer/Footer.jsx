@@ -13,7 +13,7 @@ const Footer = () => {
       <div className="max-w-containerxs mx-auto flex justify-between items-center">
         <small className="text-neutral-600">JOSEPHV / {year}-Present.</small>
         {currentPath === "/" && (
-          <button onClick={toggleQuote}>
+          <button className="cursor-default" onClick={toggleQuote}>
             <QuoteIcon width={"1em"} height={"1em"} fill={"gray"} />
           </button>
         )}
