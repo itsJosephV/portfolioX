@@ -23,7 +23,8 @@ module.exports = {
         "primary-color": "var(--primary-color)",
         "secondary-color": "var(--secondary-color)",
         "base-border-color": "var(--base-border-color)",
-        "muted-color" : "var(--muted-color)"
+        "muted-color" : "var(--muted-color)",
+        "muted-quote-color": "var(--muted-quote-color)"
       },
       screens: {
         sm: "640px",

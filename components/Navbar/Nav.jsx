@@ -35,7 +35,7 @@ const NavBar = () => {
       isBordered
       //? (shouldHideOnScroll) works weird in Safari, shows up again when bottom is reached
       //? works perfectly on Firefox
-      className={!isMenuOpen ? "bg-transparent" : "bg-[--main-bg-color]"}
+      className={!isMenuOpen ? "bg-transparent" : "bg-main-bg-color"}
 
     >
       <NavbarContent>
@@ -88,7 +88,7 @@ const NavBar = () => {
           </a>
         </NavbarItem>
       </NavbarContent>
-      <NavbarMenu className="flex flex-col gap-4 pt-3 slide-enter-content bg-[--main-bg-color]">
+      <NavbarMenu className="flex flex-col gap-4 pt-3 slide-enter-content bg-main-bg-color">
         {navlist.map((item, index) => (
           <NavbarMenuItem key={`${item}-${index}`}>
             <Link

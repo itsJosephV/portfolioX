@@ -4,11 +4,12 @@
 
 :root {
   --main-bg-color: #121212;
-  --secondary-bg-color: #181818;
+  --secondary-bg-color: #212121;
   --primary-color: #fff;
   --secondary-color: #b3b3b3;
   --base-border-color: #404040;
-  --muted-color: #404040;
+  --muted-quote-color: #404040;
+  --muted-color: #585858;
 }
 
 

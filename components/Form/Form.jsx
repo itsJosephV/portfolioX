@@ -49,32 +49,30 @@ const Form = ({ inputNameRef }) => {
         name="user_name"
         isRequired
         startContent={
-          <UserIcon className="text-1xl pointer-events-none flex-shrink-0" />
+          <UserIcon className="text-1xl pointer-events-none flex-shrink-0  text-secondary-color" />
         }
       />
       <Input
         variant="underlined"
         type="email"
         radius="sm"
-
         name="user_email"
         isRequired
         placeholder="Enter your email"
         startContent={
-          <MailIcon className="text-1xl pointer-events-none flex-shrink-0" />
+          <MailIcon className="text-1xl pointer-events-none flex-shrink-0 text-secondary-color" />
         }
       />
       <Textarea
-        radius="sm"
         placeholder="Enter your message"
-        className="max-w-xs"
         name="message"
         variant="underlined"
       />
       <Button
+        radius="sm"
         type="submit"
         isLoading={isLoading}
-        className="font-semibold duration-200"
+        className="font-semibold duration-200 bg-secondary-bg-color"
       >
         SEND
       </Button>

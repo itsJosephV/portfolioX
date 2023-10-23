@@ -35,11 +35,11 @@ const Intro = ({ quote }) => {
         </p>
         <ul className="gap-2 mb-7 flex flex-wrap text-secondary-color">
           Current stack:{" "}
-          {skillList.map((skill) => (
+          {skillList.map((skill, index) => (
             <li key={skill.title}>
               <span className="font-semibold text-primary-color">
                 {skill.title}
-                {", "}
+                {index !== skillList.length - 1 ? ", " : "."}
               </span>
             </li>
           ))}
@@ -95,7 +95,7 @@ const Intro = ({ quote }) => {
         {isQuoteOpen && (
           <>
             <span className="my-8 no-animation"></span>
-            <section className="flex justify-center text-muted-color px-5 no-animation">
+            <section className="flex justify-center text-muted-quote-color px-5 no-animation">
               <blockquote className="">
                 <p className="mb-2">
                   <em>"{quote.quote}"</em>
