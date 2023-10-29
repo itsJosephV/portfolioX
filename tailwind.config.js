@@ -17,6 +17,10 @@ module.exports = {
       containerxs: "650px",
     },
     extend: {
+      fontFamily: {
+        sans: ['var(--font-geist-sans)'],
+        mono: ['var(--font-geist-mono)'],
+      },
       colors: {
         "main-bg-color": "var(--main-bg-color)",
         "secondary-bg-color": "var(--secondary-bg-color)",

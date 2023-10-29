@@ -7,8 +7,4 @@ export const navlist = [
     label: "Experience",
     route: "/experience",
   },
-  {
-    label: "Contact",
-    route: "/contact",
-  },
 ];

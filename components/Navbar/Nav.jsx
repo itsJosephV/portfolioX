@@ -12,6 +12,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React, { useState } from "react";
 import { navlist } from "./nav_list";
+import MyAvatar from "../Avatar/MyAvatar";
 
 const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -47,7 +48,7 @@ const NavBar = () => {
           <Link
             onClick={handleBrandNavToggle}
             href="/"
-            className="font-bold text-primary-color"
+            className="font-semibold text-primary-color"
           >
             JV.
           </Link>
@@ -56,14 +57,14 @@ const NavBar = () => {
 
       <NavbarContent
         // style={{ backgroundColor: "gray" }}
-        className="hidden lg:flex gap-4"
+        className="hidden lg:flex gap-5 mr-2"
         justify="end"
       >
         {navlist.map((item, index) => (
           <li key={`${item}-${index}`}>
             <Link
               // className="text-neutral-400 hover:text-neutral-100 duration-200"
-              className={`duration-200 text-secondary-color hover:text-primary-color ${
+              className={`duration-200 text-[15px] text-secondary-color hover:text-primary-color ${
                 location === item.route && "current-page"
               }`}
               href={item.route}
@@ -78,14 +79,7 @@ const NavBar = () => {
         // style={{ backgroundColor: "gray" }}
       >
         <NavbarItem className="flex">
-          <a
-            href="/assets/Joseph_Vento_CV.pdf"
-            variant="flat"
-            target="_blank"
-            className="py-1.5 px-4 m-2 text-sm text-secondary-color hover:text-primary-color hover:border-primary-color rounded-md font-semibold bg-secondary-bg-color border border-base-border-color duration-200"
-          >
-            Resume
-          </a>
+          <MyAvatar />
         </NavbarItem>
       </NavbarContent>
       <NavbarMenu className="flex flex-col gap-4 pt-3 slide-enter-content bg-main-bg-color">
