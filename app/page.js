@@ -7,7 +7,7 @@ export default async function Home() {
 
   return (
     <div className="max-w-containerSmall mx-auto w-full">
-      <Intro quote={quote.quote} />
+      <Intro quote={quote} />
     </div>
   );
 }

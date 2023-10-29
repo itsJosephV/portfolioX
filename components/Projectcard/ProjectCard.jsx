@@ -11,7 +11,7 @@ const ProjectCard = ({ image, description, title, technologies, createdAt, x }) 
   return (
     <Card
       isHoverable
-      className="h-auto border border-neutral-700 slide-enter cursor-pointer hover:border-neutral-600"
+      className="h-auto border-[.8px] border-base-border-color slide-enter cursor-pointer hover:"
       style={{ "--enter-stage": x + 1 }}
       radius="md"
     >
@@ -20,18 +20,17 @@ const ProjectCard = ({ image, description, title, technologies, createdAt, x }) 
           src={image}
           radius="none"
           width="100%"
-          className="border-b border-neutral-700"
         />
       ) : (
         <CardSkeleton />
       )}
 
-      <CardFooter className="flex flex-col gap-3">
+      <CardFooter className="flex flex-col gap-3 border-t-[.8px] border-base-border-color bg-main-bg-color">
         <div className="w-full">
           <h3 className="text-[17px] font-medium tracking-wide mb-2">
             {capitalize(title)}
           </h3>
-          <p className="w-full text-neutral-400">{description}</p>
+          <p className="w-full text-secondary-color">{description}</p>
         </div>
 
         <div className="w-full flex flex-row gap-2 ">
@@ -39,7 +38,7 @@ const ProjectCard = ({ image, description, title, technologies, createdAt, x }) 
             <TechPill key={i} tech={tech} />
           ))}
         </div>
-        <time className="w-full text-[12px] font-mono text-neutral-500">{createdAt}</time>
+        <time className="w-full text-[12px] font-mono text-muted-color">{createdAt}</time>
       </CardFooter>
     </Card>
   );
