@@ -17,9 +17,8 @@ const toastStyles = {
 };
 
 const MyAvatar = ({ breakpoint }) => {
-
   const notify = () =>
-    toast("Copied to clipboard!", {
+    toast("Number copied to clipboard!", {
       duration: 3000,
       style: toastStyles,
       icon: "📋",
@@ -33,6 +32,7 @@ const MyAvatar = ({ breakpoint }) => {
   useHotkeys("r", () => openCVLink.current?.click());
 
   useHotkeys("n", () => copyNumber.current?.click());
+
   function handleCopyNumber() {
     navigator.clipboard.writeText(phoneNumber);
     notify();
@@ -57,13 +57,22 @@ const MyAvatar = ({ breakpoint }) => {
             href="/assets/Joseph_Vento_CV.pdf"
             variant="flat"
             target="_blank"
+            className="block text-white text-start"
           >
-            Resume
+            Resume/CV
           </a>
         </DropdownItem>
         <DropdownItem key="phone-number" shortcut="N" textValue="phone-number">
-          <button onClick={handleCopyNumber} ref={copyNumber} variant="flat">
-            <p className="text-[13px] font-mono">{phoneNumber}</p>
+          <button
+            className="w-full"
+            onClick={handleCopyNumber}
+            ref={copyNumber}
+            variant="flat"
+          >
+            <p className="text-white text-start">Phone Number</p>
+            <p className="text-zinc-400 text-start font-mono text-[11px] leading-snug">
+              {phoneNumber}
+            </p>
           </button>
         </DropdownItem>
       </DropdownMenu>

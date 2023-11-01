@@ -29,6 +29,7 @@ const Footer = () => {
   const startStyle = {
     display:"inline-block",
     transform: `rotate(${secondsData}deg)`,
+    // border:"1px solid white"
   }  
 
   return (

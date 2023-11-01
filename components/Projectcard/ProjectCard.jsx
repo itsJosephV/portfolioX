@@ -11,6 +11,9 @@ const ProjectCard = ({
   createdAt,
   x,
 }) => {
+
+
+
   const capitalize = (string) => {
     return string[0].toUpperCase() + string.slice(1);
   };
@@ -35,7 +38,7 @@ const ProjectCard = ({
           <p className="w-full text-zinc-400">{description}</p>
         </div>
 
-        <div className="w-full flex flex-row gap-2 ">
+        <div className="w-full flex flex-wrap flex-row gap-2 ">
           {technologies.map((tech, i) => (
             <TechPill key={i} tech={tech} />
           ))}

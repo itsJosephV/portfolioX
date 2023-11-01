@@ -72,7 +72,7 @@ const Intro = ({ quote }) => {
         <small className="w-60 mb-5">
           <a
             href="mailto:jvp.2703@gmail.com"
-            className="py-1 px-2 text-zinc-400 border border-zinc-600 hover:text-white bg-zinc-800 rounded-md flex items-center justify-center gap-1 cursor-pointer duration-200"
+            className="py-1 px-2 text-white border border-zinc-600 hover:border-white/40 bg-zinc-800 rounded-md flex items-center justify-center gap-1 cursor-pointer duration-200"
           >
             <span>
               <EmailMeIcon height={12} width={12} />
