@@ -7,8 +7,6 @@ import Nav from "../components/Navbar/Nav";
 import Footer from "@/components/Footer/Footer";
 import { GeistSans, GeistMono } from "geist/font";
 
-// const Os = Open_Sans({ subsets: ["latin"] });
-
 export const metadata = {
   title: "JosephV",
   description: "Personal portfolio",

@@ -36,7 +36,8 @@ const NavBar = () => {
       isBordered
       //? (shouldHideOnScroll) works weird in Safari, shows up again when bottom is reached
       //? works perfectly on Firefox
-      className={!isMenuOpen ? "bg-transparent" : "bg-main-bg-color"}
+      className={!isMenuOpen? "bg-transparent" : "bg-main-bg-color"}
+      height={"3.4rem"}
 
     >
       <NavbarContent>
@@ -50,7 +51,7 @@ const NavBar = () => {
             href="/"
             className="font-semibold text-primary-color"
           >
-            JV.
+            JV
           </Link>
         </NavbarBrand>
       </NavbarContent>
@@ -86,7 +87,7 @@ const NavBar = () => {
         {navlist.map((item, index) => (
           <NavbarMenuItem key={`${item}-${index}`}>
             <Link
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              onClick={(e) => setIsMenuOpen(!isMenuOpen)}
               className="text-2xl text-secondary-color hover:text-primary-color duration-200 font-semibold"
               href={item.route}
             >

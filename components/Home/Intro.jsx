@@ -21,7 +21,7 @@ const Intro = ({ quote }) => {
       </div>
       <div className="flex flex-col slide-enter-content max-w-containerxs mx-auto">
         <p className=" mb-7 text-secondary-color">
-          <em>Hey there!</em>, I am Joseph Vento, a{" "}
+          Hey There! 👋🏼 , I am Joseph Vento, a{" "}
           <span className="text-primary-color font-medium">
             Front-End Web Developer.
           </span>
@@ -33,7 +33,7 @@ const Intro = ({ quote }) => {
           user-friendly digital interfaces.
         </p>
         <ul className="gap-2 mb-7 flex flex-wrap text-secondary-color">
-          Current stack:{" "}
+          <p className="font-medium">Current stack:</p>{" "}
           {skillList.map((skill, index) => (
             <li key={skill.title}>
               <span className="font-medium text-primary-color">
@@ -50,7 +50,7 @@ const Intro = ({ quote }) => {
         </p>
         <Divider className="my-8" />
         <section className="flex flex-col gap-2 mb-7">
-          <p className="text-secondary-color">Other links</p>
+          <p className="text-secondary-color font-medium">Other links</p>
           <ul className="flex flex-row gap-3">
             {linksList.map((link) => (
               <li
@@ -58,17 +58,17 @@ const Intro = ({ quote }) => {
                 className="inline-flex items-center text-primary-color"
               >
                 {link.icon}
-                <a
-                  href=""
+                <Link
+                  href={link.route}
                   className="underline decoration-base-border-color hover:decoration-primary-color duration-200 underline-offset-4"
                 >
                   {link.title}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
         </section>
-        <section className="flex flex-col gap-3">
+        <section className="flex flex-col font-medium gap-3">
           <p className="text-secondary-color">Socials</p>
           <SocialsHome />
         </section>
