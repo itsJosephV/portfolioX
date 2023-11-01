@@ -1,13 +1,35 @@
 "use client";
 import { useGenerationStore } from "@/app/qstate";
-import { QuoteIcon } from "@/icons/icons";
 import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
 // import heart from "../../data/heart-animated.json"
 
 const Footer = () => {
   const currentPath = usePathname();
   const { toggleQuote } = useGenerationStore();
   const year = new Date().getFullYear();
+
+  const [secondsData, setSecondsData] = useState(getSecondsDeg());
+
+  function getSecondsDeg() {
+    const interval = 6;
+    const seconds = new Date().getSeconds();
+    const degrees = seconds * interval;
+    return degrees;
+  }
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setSecondsData(getSecondsDeg());
+    }, 1000);
+
+    return () => clearInterval(intervalId);
+  }, []);
+
+  const startStyle = {
+    display:"inline-block",
+    transform: `rotate(${secondsData}deg)`,
+  }  
 
   return (
     <footer className="w-full p-2 mt-auto px-[20px]">
@@ -17,11 +39,10 @@ const Footer = () => {
         </small>
         {currentPath === "/" && (
           <button
-            className="text-muted-color cursor-default"
+            className="text-muted-color cursor-crosshair"
             onClick={toggleQuote}
           >
-            <QuoteIcon width={"1em"} height={"1em"} />
-            {/* <Lottie animationData={heart} loop={false} style={style} /> */}
+            <span style={startStyle}>✦</span>
           </button>
         )}
         <a href="">
@@ -30,9 +51,10 @@ const Footer = () => {
           </small>
         </a>
       </div>
-      
     </footer>
   );
 };
 
 export default Footer;
+
+

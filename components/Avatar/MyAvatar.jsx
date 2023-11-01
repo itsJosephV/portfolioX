@@ -22,20 +22,19 @@ const MyAvatar = () => {
   useHotkeys("n", () => copyNumber.current?.click());
   function handleCopyNumber() {
     navigator.clipboard.writeText(phoneNumber);
-    createToast('Phone number copied!', {
+    createToast('Phone number copied to clipboard!', {
       timeout: 3000,
       type: "dark"
     })
   }
 
   return (
-    <Dropdown placement="bottom-start">
+    <Dropdown placement="bottom-end">
       <DropdownTrigger>
         <Avatar
-          size="sm"
           as="button"
           isBordered
-          className="transition-transform"
+          className="transition-transform w-[30px] h-[30px]"
           src="/mock/leonardo-da-vinci.jpg"
         />
       </DropdownTrigger>

@@ -3,15 +3,28 @@
 @tailwind utilities;
 
 :root {
-  --main-bg-color: #09090b;
-  --secondary-bg-color: #212121;
-  --primary-color: #fff;
-  --secondary-color: #b3b3b3;
-  --base-border-color: #404040;
-  --muted-quote-color: #404040;
-  --muted-color: #585858;
+  --primary-color: #fff ; /* Titles & hover */
+  --secondary-color: #a1a1aa; /* general text */
+  --base-border-color: #52525b; /* Borders */
+  --muted-color: #71717a; /* text out of context */
+  --muted-quote-color: #52525b; /*? only for quote */
+  --secondary-bg-color: #27272a; /* for buttons or other things that might need a bg */
+  --main-bg-color: #09090b; /* general bg */
 }
-
+/* 
+#09090b
+#18181b
+#27272a
+#3f3f46
+#52525b
+#71717a
+#a1a1aa
+#d4d4d8
+#d4d4d8
+#e4e4e7
+#f4f4f5
+#fafafa
+*/
 
 @keyframes slide-enter {
   0% {
