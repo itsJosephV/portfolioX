@@ -34,19 +34,19 @@ const Footer = () => {
   return (
     <footer className="w-full p-2 mt-auto px-[20px]">
       <div className="max-w-containerxs mx-auto flex justify-between items-center">
-        <small className="text-muted-color font-mono">
+        <small className="text-zinc-500 font-mono">
           JOSEPHV / {year}-Present.
         </small>
         {currentPath === "/" && (
           <button
-            className="text-muted-color cursor-crosshair"
+            className="text-zinc-500 cursor-crosshair"
             onClick={toggleQuote}
           >
             <span style={startStyle}>✦</span>
           </button>
         )}
         <a href="">
-          <small className="cursor-pointer text-muted-color hover:text-primary-color duration-200 font-mono">
+          <small className="cursor-pointer text-zinc-500 hover:text-white duration-200 font-mono">
             Source
           </small>
         </a>

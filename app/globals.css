@@ -2,15 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --primary-color: #fff ; /* Titles & hover */
-  --secondary-color: #a1a1aa; /* general text */
-  --base-border-color: #52525b; /* Borders */
-  --muted-color: #71717a; /* text out of context */
-  --muted-quote-color: #52525b; /*? only for quote */
-  --secondary-bg-color: #27272a; /* for buttons or other things that might need a bg */
-  --main-bg-color: #09090b; /* general bg */
-}
+
 /* 
 #09090b
 #18181b

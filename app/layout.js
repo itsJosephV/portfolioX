@@ -6,6 +6,7 @@ import Providers from "./providers";
 import Nav from "../components/Navbar/Nav";
 import Footer from "@/components/Footer/Footer";
 import { GeistSans, GeistMono } from "geist/font";
+import { Toaster } from "react-hot-toast";
 
 export const metadata = {
   title: "JosephV",
@@ -22,13 +23,14 @@ export default function RootLayout({ children }) {
     >
       {" "}
       {/* dark */}
-      <body className="bg-main-bg-color">
+      <body className="bg-zinc-950">
         <Providers>
           <div className={`w-screen min-h-screen flex flex-col`}>
             <Nav />
             <main className="py-[65px] px-[20px]">{children}</main>
             <Footer />
           </div>
+          <Toaster position="bottom-right"/>
         </Providers>
       </body>
     </html>

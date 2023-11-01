@@ -3,7 +3,7 @@ import { InstagramIcon, LinkedInIcon, GitHubIcon } from "@/icons/icons";
 
 const SocialsHome = () => {
   const socialsClass =
-    "text-xl text-primary-color inline-flex items-center justify-center cursor-pointer duration-200";
+    "text-xl text-white inline-flex items-center justify-center cursor-pointer duration-200";
 
   return (
     <div className="flex flex-row gap-3 justify-start">

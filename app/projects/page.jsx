@@ -26,8 +26,8 @@ const Projects = () => {
   return (
     <article>
       <div className="max-w-containerxs mx-auto mb-10">
-        <h1 className="text-2xl font-semibold mb-3 text-primary-color">Projects</h1>
-        <p className="text-secondary-color">
+        <h1 className="text-2xl font-semibold mb-3 text-white">Projects</h1>
+        <p className="text-zinc-400">
           Lorem ipsum dolor sit amet consectetur adipisicing elit.
           Necessitatibus, ut.
         </p>

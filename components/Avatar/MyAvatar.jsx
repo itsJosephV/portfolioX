@@ -7,11 +7,24 @@ import {
   User,
 } from "@nextui-org/react";
 import { useRef } from "react";
+import toast from "react-hot-toast";
 import { useHotkeys } from "react-hotkeys-hook";
-import { createToast } from "vercel-toast";
-import "vercel-toast/css";
 
-const MyAvatar = () => {
+const toastStyles = {
+  backgroundColor: "#27272a",
+  border: "1px solid #52525b",
+  color: "white",
+};
+
+const MyAvatar = ({ breakpoint }) => {
+
+  const notify = () =>
+    toast("Copied to clipboard!", {
+      duration: 3000,
+      style: toastStyles,
+      icon: "📋",
+    });
+
   const openCVLink = useRef(null);
   const copyNumber = useRef(null);
 
@@ -22,14 +35,13 @@ const MyAvatar = () => {
   useHotkeys("n", () => copyNumber.current?.click());
   function handleCopyNumber() {
     navigator.clipboard.writeText(phoneNumber);
-    createToast('Phone number copied to clipboard!', {
-      timeout: 3000,
-      type: "dark"
-    })
+    notify();
   }
 
+  // console.log(breakpoint);
+
   return (
-    <Dropdown placement="bottom-end">
+    <Dropdown placement={breakpoint === "lg" ? "bottom-center" : "bottom-end"}>
       <DropdownTrigger>
         <Avatar
           as="button"
@@ -50,11 +62,7 @@ const MyAvatar = () => {
           </a>
         </DropdownItem>
         <DropdownItem key="phone-number" shortcut="N" textValue="phone-number">
-          <button
-            onClick={handleCopyNumber}
-            ref={copyNumber}
-            variant="flat"
-          >
+          <button onClick={handleCopyNumber} ref={copyNumber} variant="flat">
             <p className="text-[13px] font-mono">{phoneNumber}</p>
           </button>
         </DropdownItem>
