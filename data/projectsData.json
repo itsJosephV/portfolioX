@@ -2,7 +2,7 @@
   {
     "title": "project1",
     "id": 1,
-    "image": "https://cdn.create.vista.com/api/media/medium/316692076/stock-photo-beautiful-muslim-woman-hijab-makeup-golden-rings-bracelet-isolated-black?token=",
+    "image": "/mock/dark-bg.jpg",
     "description": "Lorem ipsum dolor sit ametLorem ipsum dolor sit amet Lorem ipsum dolor sit amet  consectetur adipisicing elit",
     "technologies": ["JavaScript", "Tailwind CSS", "Next.js", "MongoDB", "React.js"],
     "githubLink": "",

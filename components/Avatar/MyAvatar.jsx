@@ -12,7 +12,6 @@ import { useHotkeys } from "react-hotkeys-hook";
 
 const toastStyles = {
   backgroundColor: "#27272a",
-  border: "1px solid #52525b",
   color: "white",
 };
 

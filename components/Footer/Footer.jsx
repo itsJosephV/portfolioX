@@ -9,7 +9,7 @@ const Footer = () => {
   const { toggleQuote } = useGenerationStore();
   const year = new Date().getFullYear();
 
-  const [secondsData, setSecondsData] = useState(getSecondsDeg());
+  const [secondsData, setSecondsData] = useState(0);
 
   function getSecondsDeg() {
     const interval = 6;
@@ -26,10 +26,9 @@ const Footer = () => {
     return () => clearInterval(intervalId);
   }, []);
 
-  const startStyle = {
+  const starStyle = {
     display:"inline-block",
     transform: `rotate(${secondsData}deg)`,
-    // border:"1px solid white"
   }  
 
   return (
@@ -43,7 +42,7 @@ const Footer = () => {
             className="text-zinc-500 cursor-crosshair"
             onClick={toggleQuote}
           >
-            <span style={startStyle}>✦</span>
+            <span style={starStyle}>✦</span>
           </button>
         )}
         <a href="">

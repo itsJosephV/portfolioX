@@ -68,18 +68,16 @@ const Intro = ({ quote }) => {
           <p className="text-zinc-400 font-medium">Socials</p>
           <SocialsHome />
         </section>
-        <span className="my-8 no-animation"></span>
-        <small className="w-60 mb-5">
-          <a
-            href="mailto:jvp.2703@gmail.com"
-            className="py-1.5 px-3 text-white hover:text-white/70 bg-zinc-800 rounded-md cursor-pointer duration-200"
-          >
-            {/* <span>
+        <span role="spacer" aria-hidden="true" className="my-8 no-animation"></span>
+        <a
+          href="mailto:jvp.2703@gmail.com"
+          className="py-1 px-3 text-white hover:text-white/70 bg-zinc-800 rounded-md cursor-pointer duration-200 mb-5 w-fit"
+        >
+          {/* <span>
               <EmailMeIcon height={12} width={12} />
             </span> */}
-            Reach me at jvp.2703@gmail.com
-          </a>
-        </small>
+          <small>Reach me at jvp.2703@gmail.com</small>
+        </a>
         <small className="flex items-center text-zinc-400 gap-1">
           - Based in Gran Canaria{" "}
           <span className="inline-block">
@@ -89,7 +87,7 @@ const Intro = ({ quote }) => {
         </small>
         {isQuoteOpen && (
           <>
-            <span className="my-8 no-animation"></span>
+            <span role="spacer" aria-hidden="true" className="my-8 no-animation"></span>
             <section className="flex justify-center text-zinc-600 px-5 no-animation">
               <blockquote className="">
                 <p className="mb-2">
