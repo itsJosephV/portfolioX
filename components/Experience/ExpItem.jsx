@@ -7,7 +7,7 @@ const ExpItem = ({ date, title, description }) => {
       <time className="mb-1 text-sm font-mono leading-none text-zinc-500">
         {date}
       </time>
-      <h3 className="text-lg font-semibold text-white">{title}</h3>
+      <h3 className="text-lg font-medium text-white">{title}</h3>
       <p className="mb-4 text-zinc-400">{description}</p>
     </li>
   );

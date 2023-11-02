@@ -68,20 +68,20 @@ const Intro = ({ quote }) => {
           <p className="text-zinc-400 font-medium">Socials</p>
           <SocialsHome />
         </section>
-        <Divider className="my-8" />
+        <span className="my-8 no-animation"></span>
         <small className="w-60 mb-5">
           <a
             href="mailto:jvp.2703@gmail.com"
-            className="py-1 px-2 text-white border border-zinc-600 hover:border-white/40 bg-zinc-800 rounded-md flex items-center justify-center gap-1 cursor-pointer duration-200"
+            className="py-1.5 px-3 text-white hover:text-white/70 bg-zinc-800 rounded-md cursor-pointer duration-200"
           >
-            <span>
+            {/* <span>
               <EmailMeIcon height={12} width={12} />
-            </span>
-            Email me at jvp.2703@gmail.com
+            </span> */}
+            Reach me at jvp.2703@gmail.com
           </a>
         </small>
         <small className="flex items-center text-zinc-400 gap-1">
-          Based in Gran Canaria{" "}
+          - Based in Gran Canaria{" "}
           <span className="inline-block">
             <BananaIcon height={13} width={13} />
           </span>{" "}

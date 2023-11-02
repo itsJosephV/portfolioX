@@ -6,7 +6,7 @@ const page = () => {
   return (
     <article className="max-w-containerSmall mx-auto">
       <div className="max-w-containerxs mx-auto mb-10">
-        <h1 className="text-2xl font-bold">Illustrations</h1>
+        <h1 className="text-2xl font-semibold text-white">Posters</h1>
       </div>
       <section className="max-w-containerxs mx-auto">
         <div className="flex flex-col gap-2 items-center">
@@ -17,7 +17,7 @@ const page = () => {
             </p>
             <Link
               href="/"
-              className="text-zinc-500 hover:text-white duration-200"
+              className="text-white hover:text-white/70 duration-200"
             >
               {"←"} Back to home
             </Link>

@@ -8,17 +8,17 @@ const SocialsHome = () => {
   return (
     <div className="flex flex-row gap-3 justify-start">
       <a href="">
-        <span className={`${socialsClass} hover:text-emerald-400 `}>
+        <span className={`${socialsClass} hover:text-white/70 `}>
           <GitHubIcon height={23} width={23} />
         </span>
       </a>
       <a href="">
-        <span className={`${socialsClass} hover:text-blue-400 `}>
+        <span className={`${socialsClass} hover:text-white/70 `}>
           <LinkedInIcon height={23} width={23} />
         </span>
       </a>
       <a href="">
-        <span className={`${socialsClass} hover:text-violet-400 `}>
+        <span className={`${socialsClass} hover:text-white/70 `}>
           <InstagramIcon height={23} width={23} />
         </span>
       </a>
