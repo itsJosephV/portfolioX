@@ -39,7 +39,7 @@ const NavBar = () => {
       isBordered
       //? (shouldHideOnScroll) works weird in Safari, shows up again when bottom is reached
       //? works perfectly on Firefox
-      className={!isMenuOpen? "bg-transparent" : "bg-zinc-950"}
+      className={!isMenuOpen? "bg-transparent border-white/10" : "bg-zinc-950"}
       height={"3.4rem"}
 
     >
@@ -52,9 +52,9 @@ const NavBar = () => {
           <Link
             onClick={handleBrandNavToggle}
             href="/"
-            className="font-semibold text-white"
+            className="font-bold text-[20px]"
           >
-            JV
+            {"{ JV }"}
           </Link>
         </NavbarBrand>
       </NavbarContent>

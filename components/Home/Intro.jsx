@@ -44,7 +44,7 @@ const Intro = ({ quote }) => {
           you can catch a glimpse of my artwork on Instagram, where I share my
           visual creations.
         </p>
-        <Divider className="my-8" />
+        <Divider className="my-8 bg-white/10"/>
         <section className="flex flex-col gap-2 mb-7">
           <p className="text-zinc-400 font-medium">Other links</p>
           <ul className="flex flex-row gap-3">
@@ -56,7 +56,7 @@ const Intro = ({ quote }) => {
                 {link.icon}
                 <Link
                   href={link.route}
-                  className="underline decoration-zinc-600 hover:decoration-white duration-200 underline-offset-4"
+                  className="underline decoration-white/30 hover:decoration-white duration-200 underline-offset-4"
                 >
                   {link.title}
                 </Link>

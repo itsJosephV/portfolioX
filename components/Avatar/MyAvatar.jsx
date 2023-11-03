@@ -13,14 +13,18 @@ import { useHotkeys } from "react-hotkeys-hook";
 const toastStyles = {
   backgroundColor: "#27272a",
   color: "white",
+  fontSize: "14px",
 };
 
 const MyAvatar = ({ breakpoint }) => {
   const notify = () =>
-    toast("Number copied to clipboard!", {
+    toast.success("Number copied to clipboard!", {
       duration: 3000,
       style: toastStyles,
-      icon: "📋",
+      icon: "📱",
+      ariaProps: {
+        role: "status",
+      },
     });
 
   const openCVLink = useRef(null);

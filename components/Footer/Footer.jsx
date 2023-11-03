@@ -1,8 +1,8 @@
 "use client";
 import { useGenerationStore } from "@/app/qstate";
+import { Star } from "@/icons/icons";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-// import heart from "../../data/heart-animated.json"
 
 const Footer = () => {
   const currentPath = usePathname();
@@ -26,11 +26,6 @@ const Footer = () => {
     return () => clearInterval(intervalId);
   }, []);
 
-  const starStyle = {
-    display:"inline-block",
-    transform: `rotate(${secondsData}deg)`,
-  }  
-
   return (
     <footer className="w-full p-2 mt-auto px-[20px]">
       <div className="max-w-containerxs mx-auto flex justify-between items-center">
@@ -39,10 +34,10 @@ const Footer = () => {
         </small>
         {currentPath === "/" && (
           <button
-            className="text-zinc-500 cursor-crosshair"
+            className="cursor-crosshair"
             onClick={toggleQuote}
           >
-            <span style={starStyle}>✦</span>
+              <Star width={"1em"} height={"1em"} fill={"#71717a"} secondsData={secondsData} />
           </button>
         )}
         <a href="">
@@ -56,5 +51,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
-

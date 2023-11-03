@@ -20,7 +20,7 @@ const ProjectCard = ({
 
   return (
     <Card
-      className="h-auto w-full slide-enter border border-zinc-600/20 hover:border-zinc-600/60  duration-200 cursor-pointer"
+      className="h-auto w-full slide-enter border border-white/5 hover:border-white/10  duration-200 cursor-pointer"
       style={{ "--enter-stage": x + 1 }}
       radius="sm"
     >
