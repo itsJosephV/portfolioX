@@ -33,7 +33,9 @@ const ProjectCard = ({
           className="w-full h-auto"
         />
       ) : (
-        <Skeleton className="h-80" />
+        <Skeleton>
+          <div className="h-80"></div>
+        </Skeleton>
       )}
 
       <CardFooter className="flex flex-col gap-3 border-t-1 border-white/10 bg-zinc-950 antialiased">
