@@ -12,6 +12,9 @@ const ProjectCard = ({
 }) => {
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
+    // setTimeout(() => {
+    //   setIsLoading(false);
+    // }, 3000)
     setIsLoading(false);
   }, []);
   const capitalize = (string) => {
@@ -24,9 +27,12 @@ const ProjectCard = ({
       style={{ "--enter-stage": x + 1 }}
       radius="sm"
     >
-      <Skeleton isLoaded={!isLoading}>
+      {!isLoading ? (
         <Image src={image} radius="none" width="100%" />
-      </Skeleton>
+      ) : (
+        <Skeleton className="h-72"/>
+      )}
+
       <CardFooter className="flex flex-col gap-3 border-t-1 border-white/10 bg-zinc-950 antialiased">
         <div className="w-full">
           <h3 className="font-medium tracking-wide mb-2">
