@@ -1,11 +1,12 @@
 "use client";
 import { linksList } from "@/components/Home/links_list";
-import { skillList } from "@/components/Home/skill_list";
-import { BananaIcon, EmailMeIcon } from "@/icons/icons";
-import { Divider } from "@nextui-org/react";
-import Link from "next/link";
-import SocialsHome from "./SocialsHome";
 import { useGenerationStore } from "@/app/qstate";
+import { skillList } from "@/components/Home/skill_list";
+import { Divider } from "@nextui-org/react";
+import { BananaIcon } from "@/icons/icons";
+import { EnvelopeIcon } from "@heroicons/react/24/solid";
+import SocialsHome from "./SocialsHome";
+import Link from "next/link";
 
 const Intro = ({ quote }) => {
   const { isQuoteOpen } = useGenerationStore();
@@ -47,7 +48,7 @@ const Intro = ({ quote }) => {
         <Divider className="my-8 bg-white/10" />
         <section className="mb-7">
           <p className="text-zinc-400 font-medium mb-2">Other crafts</p>
-          <ul className="inline-flex flex-wrap gap-2">
+          <ul className="inline-flex flex-wrap gap-3"> {/** adjusting width to elements with inline-flex */}
             {linksList.map(({ title, route }) => (
               <li key={title} className=" text-white">
                 <Link
@@ -71,16 +72,14 @@ const Intro = ({ quote }) => {
         ></span>
         <a
           href="mailto:jvp.2703@gmail.com"
-          className="py-1 px-3 text-white hover:text-white/70 bg-zinc-800 rounded-md cursor-pointer duration-200 mb-5 w-fit"
+          className="py-1 px-3 text-white hover:text-white/70 bg-zinc-800 rounded-md cursor-pointer duration-200 mb-5 w-fit flex items-center gap-1" //w-fit cuz parent is a flex container
         >
-          {/* <span>
-              <EmailMeIcon height={12} width={12} />
-            </span> */}
-          <small>Reach me at jvp.2703@gmail.com</small>
+          <EnvelopeIcon height={13} width={13} />
+          <small>jvp.2703@gmail.com</small>
         </a>
         <small className="flex items-center text-zinc-400 gap-1">
-          - Based in Gran Canaria{" "}
-          <span className="inline-block">
+          Based in Gran Canaria{" "}
+          <span>
             <BananaIcon height={13} width={13} />
           </span>{" "}
           Spain.

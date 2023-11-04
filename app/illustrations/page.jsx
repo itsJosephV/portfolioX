@@ -1,6 +1,8 @@
 import React from "react";
 import { UCIimage } from "./UCI_image";
 import Link from "next/link";
+import { ArrowSmallLeftIcon } from "@heroicons/react/24/outline";
+
 
 const page = () => {
   return (
@@ -17,9 +19,14 @@ const page = () => {
             </p>
             <Link
               href="/"
-              className="text-white hover:text-white/70 duration-200"
+              className="text-white hover:text-white/70 duration-200 inline-block"
             >
-              {"←"} Back to home
+              <p className="flex items-center gap-1">
+                <span>
+                  <ArrowSmallLeftIcon height={20} width={20} />
+                </span>{" "}
+                Back to home
+              </p>
             </Link>
           </div>
         </div>
