@@ -20,15 +20,15 @@ const ProjectCard = ({
       style={{ "--enter-stage": x + 1 }}
       radius="sm"
     >
+      <div className="">
       <NextImage
         src={image}
         radius="none"
-        width={0}
-        height={0}
-        sizes="100vw"
-        className="w-full h-auto"
+        width={1000}
+        height={1000}
         placeholder="empty"
       />
+      </div>
 
       <CardFooter className="flex flex-col gap-3 border-t-1 border-white/10 bg-zinc-950 antialiased">
         <div className="w-full">
