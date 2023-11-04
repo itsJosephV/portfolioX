@@ -30,7 +30,7 @@ const ProjectCard = ({
         <CardSkeleton />
       )}
 
-      <CardFooter className="flex flex-col gap-3 border-t-1 border-zinc-600/20 bg-zinc-950">
+      <CardFooter className="flex flex-col gap-3 border-t-1 border-white/10 bg-zinc-950 antialiased">
         <div className="w-full">
           <h3 className="font-medium tracking-wide mb-2">
             {capitalize(title)}

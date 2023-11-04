@@ -18,7 +18,7 @@ const toastStyles = {
 
 const MyAvatar = ({ breakpoint }) => {
   const notify = () =>
-    toast.success("Number copied to clipboard!", {
+    toast.success("Phone number copied!", {
       duration: 3000,
       style: toastStyles,
       icon: "📱",
@@ -54,7 +54,12 @@ const MyAvatar = ({ breakpoint }) => {
         />
       </DropdownTrigger>
       <DropdownMenu aria-label="User Actions" variant="flat">
-        <DropdownItem key="josephv-cv" shortcut="R" textValue="cv">
+        <DropdownItem
+          key="josephv-cv"
+          shortcut="R"
+          textValue="cv"
+          className="antialiased"
+        >
           <a
             ref={openCVLink}
             href="/assets/Joseph_Vento_CV.pdf"
@@ -65,7 +70,12 @@ const MyAvatar = ({ breakpoint }) => {
             Resume/CV
           </a>
         </DropdownItem>
-        <DropdownItem key="phone-number" shortcut="N" textValue="phone-number">
+        <DropdownItem
+          key="phone-number"
+          shortcut="N"
+          textValue="phone-number"
+          className="antialiased"
+        >
           <button
             className="w-full"
             onClick={handleCopyNumber}

@@ -13,7 +13,7 @@ const Intro = ({ quote }) => {
   return (
     <article>
       <div className="max-w-containerxs mx-auto mb-10">
-        <h1 className="text-4xl font-semibold">Joseph V.</h1>
+        <h1 className="text-2xl font-semibold">Joseph Vento</h1>
       </div>
       <div className="flex flex-col slide-enter-content max-w-containerxs mx-auto">
         <p className=" mb-7 text-zinc-400">
@@ -46,7 +46,7 @@ const Intro = ({ quote }) => {
         </p>
         <Divider className="my-8 bg-white/10"/>
         <section className="flex flex-col gap-2 mb-7">
-          <p className="text-zinc-400 font-medium">Other links</p>
+          <p className="text-zinc-400 font-medium">Other crafts</p>
           <ul className="flex flex-row gap-3">
             {linksList.map((link) => (
               <li
