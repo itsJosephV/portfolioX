@@ -6,7 +6,7 @@ const SocialsHome = () => {
     "text-xl text-white inline-flex items-center justify-center cursor-pointer duration-200";
 
   return (
-    <div className="flex flex-row gap-3 justify-start">
+    <div className="inline-flex gap-3">
       <a href="">
         <span className={`${socialsClass} hover:text-white/70 `}>
           <GitHubIcon height={23} width={23} />

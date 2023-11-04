@@ -1,6 +1,5 @@
 import React from "react";
-import { Card, CardFooter } from "@nextui-org/react";
-import CardSkeleton from "./CardSkeleton";
+import { Card, CardFooter, Skeleton } from "@nextui-org/react";
 import TechPill from "./TechPill";
 import NextImage from "next/image";
 
@@ -34,7 +33,7 @@ const ProjectCard = ({
           className="w-full h-auto"
         />
       ) : (
-        <CardSkeleton />
+        <Skeleton className="h-80" />
       )}
 
       <CardFooter className="flex flex-col gap-3 border-t-1 border-white/10 bg-zinc-950 antialiased">

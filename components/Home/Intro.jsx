@@ -44,31 +44,31 @@ const Intro = ({ quote }) => {
           you can catch a glimpse of my artwork on Instagram, where I share my
           visual creations.
         </p>
-        <Divider className="my-8 bg-white/10"/>
-        <section className="flex flex-col gap-2 mb-7">
-          <p className="text-zinc-400 font-medium">Other crafts</p>
-          <ul className="flex flex-row gap-3">
-            {linksList.map((link) => (
-              <li
-                key={link.title}
-                className="inline-flex items-center text-white"
-              >
-                {link.icon}
+        <Divider className="my-8 bg-white/10" />
+        <section className="mb-7">
+          <p className="text-zinc-400 font-medium mb-2">Other crafts</p>
+          <ul className="inline-flex flex-wrap gap-2">
+            {linksList.map(({ title, route }) => (
+              <li key={title} className=" text-white">
                 <Link
-                  href={link.route}
+                  href={route}
                   className="underline decoration-white/30 hover:decoration-white duration-200 underline-offset-4"
                 >
-                  {link.title}
+                  {title}
                 </Link>
               </li>
             ))}
           </ul>
         </section>
-        <section className="flex flex-col gap-3">
-          <p className="text-zinc-400 font-medium">Socials</p>
+        <section>
+          <p className="text-zinc-400 font-medium mb-2">Socials</p>
           <SocialsHome />
         </section>
-        <span role="spacer" aria-hidden="true" className="my-8 no-animation"></span>
+        <span
+          role="spacer"
+          aria-hidden="true"
+          className="my-8 no-animation"
+        ></span>
         <a
           href="mailto:jvp.2703@gmail.com"
           className="py-1 px-3 text-white hover:text-white/70 bg-zinc-800 rounded-md cursor-pointer duration-200 mb-5 w-fit"
@@ -87,7 +87,11 @@ const Intro = ({ quote }) => {
         </small>
         {isQuoteOpen && (
           <>
-            <span role="spacer" aria-hidden="true" className="my-8 no-animation"></span>
+            <span
+              role="spacer"
+              aria-hidden="true"
+              className="my-8 no-animation"
+            ></span>
             <section className="flex justify-center text-zinc-600 px-5 no-animation">
               <blockquote className="">
                 <p className="mb-2">
