@@ -1,7 +1,6 @@
 import React from "react";
-import { Card, CardFooter, Skeleton } from "@nextui-org/react";
+import { Card, CardFooter, Image, Skeleton } from "@nextui-org/react";
 import TechPill from "./TechPill";
-import NextImage from "next/image";
 
 const ProjectCard = ({
   image,
@@ -23,15 +22,7 @@ const ProjectCard = ({
     >
       {image ? (
         // <Image src={image} radius="none" width="100%" />
-        <NextImage
-          src={image}
-          width={0}
-          height={0}
-          radius="none"
-          sizes="100vw"
-          alt="project-image"
-          className="w-full h-auto"
-        />
+        <Image src={image} radius="none" width="100%" />
       ) : (
         <Skeleton>
           <div className="h-80"></div>
