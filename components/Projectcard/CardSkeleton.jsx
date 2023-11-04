@@ -4,7 +4,7 @@ import React from 'react'
 const CardSkeleton = () => {
   return (
     <Skeleton>
-      <div className="h-60"></div>
+      <div className="h-72"></div>
     </Skeleton>
   );
 };

@@ -2,7 +2,7 @@
   {
     "title": "project1",
     "id": 1,
-    "image": "/mock/dark-bg.jpg",
+    "image": "/mock/dv-drawing.jpg",
     "description": "Lorem ipsum dolor sit ametLorem ipsum dolor sit amet Lorem ipsum dolor sit amet  consectetur adipisicing elit",
     "technologies": ["JavaScript", "Tailwind CSS", "Next.js", "MongoDB", "React.js"],
     "githubLink": "",
@@ -13,7 +13,7 @@
   {
     "title": "project2",
     "id": 2,
-    "image": "/mock/dark-bg.jpg",
+    "image": "",
     "description": "Lorem ipsum dolor sit aLorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet met consectetur adipisicing elit",
     "technologies": ["JavaScript", "Tailwind CSS", "Next.js"],
     "githubLink": "",
@@ -35,7 +35,7 @@
   {
     "title": "project4",
     "id": 4,
-    "image": "/mock/dark-bg.jpg",
+    "image": "/mock/dv-drawing.jpg",
     "description": "Lorem iit amet consectetur adipisicingpsum dolor sit amet consectetur adipisicing elit",
     "technologies": ["JavaScript", "Tailwind CSS", "Next.js"],
     "githubLink": "",
