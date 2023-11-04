@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Card, CardFooter, Image, Skeleton } from "@nextui-org/react";
 import TechPill from "./TechPill";
 
@@ -10,6 +10,10 @@ const ProjectCard = ({
   createdAt,
   x,
 }) => {
+  const [isLoading, setIsLoading] = useState(true);
+  useEffect(() => {
+    setIsLoading(false);
+  }, []);
   const capitalize = (string) => {
     return string[0].toUpperCase() + string.slice(1);
   };
@@ -20,15 +24,9 @@ const ProjectCard = ({
       style={{ "--enter-stage": x + 1 }}
       radius="sm"
     >
-      {image ? (
-        // <Image src={image} radius="none" width="100%" />
+      <Skeleton isLoaded={!isLoading}>
         <Image src={image} radius="none" width="100%" />
-      ) : (
-        <Skeleton>
-          <div className="h-80"></div>
-        </Skeleton>
-      )}
-
+      </Skeleton>
       <CardFooter className="flex flex-col gap-3 border-t-1 border-white/10 bg-zinc-950 antialiased">
         <div className="w-full">
           <h3 className="font-medium tracking-wide mb-2">
