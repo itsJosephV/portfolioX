@@ -47,9 +47,9 @@ const MyAvatar = ({ breakpoint }) => {
     <Dropdown placement={breakpoint === "lg" ? "bottom-center" : "bottom-end"}>
       <DropdownTrigger>
         <Avatar
+        size="sm"
           as="button"
-          isBordered
-          className="transition-transform w-[30px] h-[30px]"
+          className="transition-transform"
           src="/mock/leonardo-da-vinci.jpg"
         />
       </DropdownTrigger>

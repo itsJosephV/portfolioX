@@ -10,7 +10,7 @@ import Link from "next/link";
 
 const Intro = ({ quote }) => {
   const { isQuoteOpen } = useGenerationStore();
-
+  
   return (
     <article>
       <div className="max-w-containerxs mx-auto mb-10">
@@ -94,10 +94,10 @@ const Intro = ({ quote }) => {
             <section className="flex justify-center text-zinc-600 px-5 no-animation">
               <blockquote className="">
                 <p className="mb-2">
-                  <em>"{quote.quote}"</em>
+                  <em>"{quote?.quote}"</em>
                 </p>
                 <cite>
-                  <small>- {quote.author}</small>
+                  <small>- {quote?.author}</small>
                 </cite>
               </blockquote>
             </section>

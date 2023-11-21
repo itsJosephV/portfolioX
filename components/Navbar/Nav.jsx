@@ -65,8 +65,9 @@ const NavBar = () => {
         justify="end"
       >
         {navlist.map((item, index) => (
-          <li key={`${item}-${index}`}>
+
             <Link
+            key={`${item}-${index}`}
               // className="text-neutral-400 hover:text-neutral-100 duration-200"
               className={`duration-200 text-[15px] text-zinc-400 hover:text-white ${
                 location === item.route && "current-page"
@@ -75,7 +76,7 @@ const NavBar = () => {
             >
               {item.label}
             </Link>
-          </li>
+
         ))}
       </NavbarContent>
       <NavbarContent
